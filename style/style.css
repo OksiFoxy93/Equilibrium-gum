@@ -80,49 +80,76 @@ p {
   font-weight: 300;
 }
 .first-screen .promo-img img {
-  width: 130%;
+  width: 100%;
 }
 
 .crossfit {
   color: #ffffff;
   background-color: #000000;
 }
+.crossfit::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .crossfit .content {
   padding-bottom: 15px;
 }
 
 .crossfit-img {
-  text-align: right;
+  float: right;
   position: relative;
-  top: 4px;
+  width: 240px;
+  height: 160px;
+  overflow: hidden;
 }
 .crossfit-img::before {
   content: "";
-  display: inline-block;
   position: absolute;
   background: #000000;
-  width: 79px;
-  height: 110%;
+  width: 78px;
+  height: 179px;
   transform: rotate(25deg);
-  left: 53px;
-  bottom: 13px;
+  left: -35px;
+  bottom: 8px;
 }
 .crossfit-img img {
-  width: 72%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%;
 }
 
 .equilibrium-fitness {
   color: #000000;
+}
+.equilibrium-fitness::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .equilibrium-fitness h1 {
   font: 36px/40px "Montserrat", sans-serif;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.equilibrium-fitness .content.right {
+.equilibrium-fitness .content .crossfit-img::before {
+  background-color: white;
+}
+.equilibrium-fitness .content .crossfit-img.left {
+  float: none;
+}
+.equilibrium-fitness .content .crossfit-img.left::before {
+  width: 78px;
+  height: 179px;
+  transform: rotate(25deg);
+  left: -35px;
+  bottom: 8px;
+}
+.equilibrium-fitness .content .right {
   text-align: right;
+}
+.equilibrium-fitness .content .right::before {
+  content: "";
+  position: absolute;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
