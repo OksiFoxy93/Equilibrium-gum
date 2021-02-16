@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+
+*{
+  padding:0;
+  margin:0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.head {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+
+.logo-link {
+  margin-left: 16px;
+}
+
+.menu-btn {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  background-color: #000;
+  border: none;
+  margin-right: 16px;
+  &::after {
+    content: "";
+    width: 21px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 16px;
+    left: 14px;
+    box-shadow: 0 7px 0 0 #fff, 0 14px 0 0 #fff;
+  }
+}
+
+h2 {
+  font: 24px/32px 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+p {
+  font: 14px/24px 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.content {
+  padding: 30px 16px;
+}
+
+.first-screen {
+  background-color: #000;
+  color: #ffffff;
+  h1 {
+    text-transform: uppercase;
+    font: 36px/40px 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+  p {
+    font: 16px/24px 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+  .promo-img {
+    img {
+      width: 130%;
+    }
+  }
+}
+
+.crossfit {
+  color: #ffffff;
+  background-color: #000000;
+
+  .content {
+    padding-bottom: 15px;
+  }
+}
+
+.crossfit-img {
+  text-align: right;
+  position: relative;
+  top: 4px;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background: #000000;
+    width: 79px;
+    height: 110%;
+    transform: rotate(25deg);
+    left: 53px;
+    bottom: 13px;
+  }
+  img {
+    width:72%;
+    height:100%;
+    object-fit: cover;
+  }
+}
+
+
+.equilibrium-fitness {
+  color: #000000;
+  h1 {
+    font: 36px/40px 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .content.right {
+    text-align: right;
+  }
+}
