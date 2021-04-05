@@ -1,0 +1,54 @@
+.feedback .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+
+.feedback .owl-prev {
+    position: absolute;
+    outline: none;
+    top: 24px;
+    right: 64px;
+
+}
+.feedback .owl-prev::before{
+    content: url("../images/arrow-left.png");
+}
+
+.feedback .owl-next {
+    position: absolute;
+    outline: none;
+    top: 24px;
+    right: 16px;
+}
+
+.feedback .owl-next::before{
+    content: url("../images/arrow-right.png");
+}
+
+.feedback .owl-dots {
+    display: none;
+}
+
+
+.photo-owl .owl-nav {
+    display: none;
+}
+
+.photo-owl .owl-dots {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 48%;
+    bottom: 10px;
+}
+.photo-owl .owl-dot span{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin: 4px;
+    outline: none;
+}
+.photo-owl .owl-dot.active span{
+    background-color: rgba(255, 255, 255, 0.7)
+}

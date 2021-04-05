@@ -161,6 +161,10 @@
   font-weight: 700;
 }
 
+.feedback__title {
+  padding-bottom: 20px;
+}
+
 .feedback__title-amount {
   font: 17px/24px "Montserrat", sans-serif;
   font-weight: 600;
@@ -178,6 +182,28 @@
 
 .feedback__button {
   color: #000000;
+}
+
+.photo-owl__item {
+  height: 220px;
+}
+
+.contact {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.contact__title {
+  padding-bottom: 24px;
+}
+
+.contact__text {
+  width: 60%;
+  padding-bottom: 24px;
+}
+
+.contact__social-link {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
