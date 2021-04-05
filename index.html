@@ -6,71 +6,127 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <div class="head">
-            <div class="logo">
-                <a href="#" class="logo-link">
-                    <img src="./images/logo.svg" alt="logo">
-                </a>
-            </div>
-            <nav class="menu">
-                <button class="menu-btn"></button>
-            </nav>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#" class="header__logo__link">
+                <img src="./images/logo.svg" alt="logo">
+            </a>
         </div>
+            <nav class="nav">
+                <ul class="nav__list-desktop">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">en</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">ru</a>
+                    </li>
+                </ul>
+                <button class="nav__button"></button>
+            </nav>
     </header>
 
-    <div class="first-screen">
-       <div class="content">
-           <h1>Equilibrium</h1>
-           <h2>Fitness</h2>
-           <p>Это не просто тренировки</p>
-       </div>
-        <div class="promo-img">
-            <img src="./images/promo-img.jpg" alt="promo-img">
-        </div>
-    </div>
+    <main>
+        <section class="home-page">
+            <div class="home-page__content wrapper-content">
+                <h1 class="home-page__title">Equilibrium</h1>
+                <p class="home-page__text-uppercase">Fitness</p>
+                <p class="home-page__text text-paragraph">Это не просто тренировки</p>
+            </div>
+            <div>
+                <img src="./images/promo-img.jpg" class="home-page__img" alt="promo-img">
+            </div>
+        </section>
 
-    <div class="crossfit">
-        <div class="content">
-            <h2>Crossfit это</h2>
-            <p>Кроссфит это испытание себя на максимуме возможностей каждый день. Это азарт и жажда победить рядом стоящего или себя самого. Это драйв и настроение.</p>
-            <p>Но самое важное, кроссфит - это сообщество. Это люди, которые связаны одним общим делом.</p>
-        </div>
-        <div class="crossfit-img">
-            <img src="./images/crossfit.jpg" alt="crossfit">
-        </div>
-    </div>
+        <section class="info-block info-block_black">
+            <div class="info-block__content wrapper-content">
+                <h3 class="info-block__title title-block">Crossfit это</h3>
+                <p class="info-block__text text-paragraph">Кроссфит это испытание себя на максимуме возможностей каждый день. Это азарт и жажда победить рядом стоящего или себя самого. Это драйв и настроение.</p>
+                <p class="info-block__text text-paragraph">Но самое важное, кроссфит - это сообщество. Это люди, которые связаны одним общим делом.</p>
+            </div>
+            <div class="info-block__wrapper-img_right">
+                <img src="./images/crossfit.jpg" class="info-block__img" alt="crossfit">
+            </div>
+        </section>
+    </main>
 
-    <div class="equilibrium-fitness">
-        <div class="content">
-            <h1>Equilibrium Fitness это</h1>
-            <h2>Уникальные методики</h2>
-            <p>Тренировки не повторяются. Каждый раз вас ждёт что-то новое.</p>
-            <div class="crossfit-img left">
-                <img src="./images/Info-Block-1.jpg" alt="crossfit">
+    <section>
+        <h2 class="info-block__title-all">Equilibrium Fitness это</h2>
+
+        <section class="info-block">
+            <div class="info-block__content wrapper-content">
+                <h3 class="info-block__title title-block">Уникальные методики</h3>
+                <p class="info-block__text text-paragraph">Тренировки не повторяются. Каждый раз вас ждёт что-то новое.</p>
+            </div>
+            <div class="info-block__wrapper-img_left">
+                <img src="./images/Info-Block-1.jpg" class="info-block__img" alt="crossfit">
+            </div>
+        </section>
+
+        <section class="info-block info-block-right">
+            <div class="info-block__content wrapper-content">
+                <h3 class="info-block__title title-block">Атмосфера сплоченности</h3>
+                <p class="info-block__text text-paragraph">Работать всегда легче, когда ты не один. На тренировках обязательно найдётся «брат по оружию» тот, кто будет страдать вместе с вами!</p>
+            </div>
+            <div class="info-block__wrapper-img_right info-block__wrapper-img_right_white">
+                <img src="./images/Info-Block-2.jpg" class="info-block__img" alt="crossfit">
+            </div>
+        </section>
+
+        <section class="info-block">
+            <div class="info-block__content wrapper-content">
+                <h3 class="info-block__title title-block">Групповые и персональные тренировки</h3>
+                <p class="info-block__text text-paragraph">У тебя всегда есть возможность работать один на один с тренером в любое удобное время.</p>
+            </div>
+            <div class="info-block__wrapper-img_left">
+                <img src="./images/Info-Block-3.jpg" class="info-block__img" alt="crossfit">
+            </div>
+        </section>
+
+        <section class="info-block info-block-right">
+            <div class="info-block__content wrapper-content">
+                <h3 class="info-block__title title-block">Индивидуальное консультирование</h3>
+                <p class="info-block__text text-paragraph">Ты всегда можешь получить индивидуальную консультацию по вопросам питания, режима сна, водного баланса, витаминов…</p>
+            </div>
+        </section>
+
+    </section>
+
+
+    <section class="main-menu">
+        <ul class="main-menu__list">
+            <li class="main-menu__item">
+                <a class="main-menu__link" href="#">Услуги и Цены</a>
+            </li>
+            <li class="main-menu__item">
+                <a class="main-menu__link" href="#">Расписание</a>
+            </li>
+            <li class="main-menu__item">
+                <a class="main-menu__link" href="#">Музыка</a>
+            </li>
+            <li class="main-menu__item">
+                <a class="main-menu__link" href="#">Блог</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="feedback">
+        <div class="feedback__content wrapper-content">
+            <h3 class="feedback__title title-block">Отзывы <span class="feedback__title-amount">(1/5)</span></h3>
+            <p class="feedback__text text-paragraph">Я помню тот момент, когда впервые пришла на тренировку. Болело все тело, а так же голова на следующее утро. Но не от перенагрузки, а от переоценки возможностей своего тела….
+            </p>
+            <div class="feedback__details">
+                <p class="feedback__name text-paragraph">Юлия</p>
+                <a class="feedback__button text-paragraph" href="#">Читать полностью</a>
             </div>
         </div>
-        <div class="content right">
-            <h2>Атмосфера сплоченности</h2>
-            <p>Работать всегда легче, когда ты не один. На тренировках обязательно найдётся «брат по оружию» тот, кто будет страдать вместе с вами!</p>
-            <div class="crossfit-img">
-                <img src="./images/Info-Block-2.jpg" alt="crossfit">
-            </div>
-        </div>
-        <div class="content">
-            <h2>Групповые и персональные тренировки</h2>
-            <p>У тебя всегда есть возможность работать один на один с тренером в любое удобное время.</p>
-            <div class="crossfit-img left">
-                <img src="./images/Info-Block-3.jpg" alt="crossfit">
-            </div>
-        </div>
-        <div class="content right">
-            <h2>Индивидуальное консультирование</h2>
-            <p>Ты всегда можешь получить индивидуальную консультацию по вопросам питания, режима сна, водного баланса, витаминов…</p>
-        </div>
-    </div>
+    </section>
+
+
+
 </body>
 </html>

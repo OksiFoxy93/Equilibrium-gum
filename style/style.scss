@@ -1,40 +1,41 @@
+$font-stack: 'Montserrat', sans-serif;
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
-
 
 *{
   padding:0;
   margin:0;
-}
-
-html {
   box-sizing: border-box;
 }
 
-body {
-  min-width: 320px;
-  overflow-x: hidden;
+.text-paragraph {
+  font: 16px/24px $font-stack;
+  font-weight: 300;
 }
 
-.head {
-  background-color: #000;
+.title-block {
+  font: 25px/32px $font-stack;
+  font-weight: 600;
+}
+
+.wrapper-content {
+  padding: 32px 16px;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 80px;
+  background-color: #000000;
+  padding: 16px;
 }
 
-.logo-link {
-  margin-left: 16px;
-}
-
-.menu-btn {
+.nav__button {
+  position: relative;
   width: 48px;
   height: 48px;
-  position: relative;
-  background-color: #000;
+  background-color: #000000;
   border: none;
-  margin-right: 16px;
   &::after {
     content: "";
     width: 21px;
@@ -47,117 +48,140 @@ body {
   }
 }
 
-h2 {
-  font: 24px/32px 'Montserrat', sans-serif;
-  font-weight: 700;
-  margin-bottom: 16px;
+.nav__list-desktop {
+  display: none;
 }
 
-p {
-  font: 14px/24px 'Montserrat', sans-serif;
-  font-weight: 400;
-  margin-bottom: 16px;
-}
-
-.content {
-  padding: 30px 16px;
-}
-
-.first-screen {
-  background-color: #000;
-  color: #ffffff;
-  h1 {
-    text-transform: uppercase;
-    font: 36px/40px 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  h2 {
-    text-transform: uppercase;
-    font-weight: 300;
-    margin-bottom: 40px;
-  }
-  p {
-    font: 16px/24px 'Montserrat', sans-serif;
-    font-weight: 300;
-  }
-  .promo-img {
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.crossfit {
-  color: #ffffff;
+.home-page {
   background-color: #000000;
-  &::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .content {
-    padding-bottom: 15px;
-  }
+  color: #ffffff;
 }
 
-.crossfit-img {
-  float: right;
+.home-page__content {
+  padding: 30px 15px 24px;
+}
+
+.home-page__title {
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  font: 36px/40px $font-stack;
+  font-weight: 600;
+}
+
+.home-page__text-uppercase {
+  padding-bottom: 40px;
+  font: 24px/32px $font-stack;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.home-page__img {
+  width: 100%;
+}
+
+.info-block_black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.info-block-right {
+  text-align: right;
+}
+
+.info-block__text {
+  padding-top: 16px;
+}
+
+.info-block__wrapper-img_right {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
-  width: 240px;
-  height: 160px;
   overflow: hidden;
   &::before {
     content: "";
     position: absolute;
-    background: #000000;
-    width: 78px;
-    height: 179px;
-    transform: rotate(25deg);
-    left: -35px;
-    bottom: 8px;
-  }
-  img {
-    width: 100%;
+    left: 110px;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 187px;
+    border-top-width: 0px;
+    border-left: 93px solid #000000;
   }
 }
 
-
-.equilibrium-fitness {
-  color: #000000;
-  &::after {
+.info-block__wrapper-img_left {
+  overflow: hidden;
+  &::before {
     content: "";
-    display: block;
-    clear: both;
+    position: absolute;
+    right: 110px;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 0px;
+    border-bottom-width: 187px;
+    border-right: 93px solid #ffffff;
   }
-  h1 {
-    font: 36px/40px 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin-bottom: 30px;
+}
+
+.info-block__wrapper-img_right_white {
+  &::before {
+    border-left: 93px solid #ffffff;
   }
-  .content{
-    .crossfit-img {
-      &::before {
-        background-color: white;
-      }
-    }
-    .crossfit-img.left {
-      float: none;
-      &::before {
-        width: 78px;
-        height: 179px;
-        transform: rotate(25deg);
-        left: -35px;
-        bottom: 8px;
-      }
-    }
-    .right {
-      text-align: right;
-      &::before {
-        content: "";
-        position: absolute;
-        background-color: white;
-      }
-    }
-  }
+}
+
+.info-block__img {
+  width: 70%;
+  display: inline-block;
+}
+
+.info-block__title-all {
+  font: 36px/40px $font-stack;
+  font-weight: 600;
+  padding: 32px 16px 0;
+}
+
+.main-menu{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/menu-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-menu__item {
+  list-style: none;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.main-menu__item:hover {
+  background-image: linear-gradient(rgba(203, 200, 200, 0.2), rgba(203, 200, 200, 0.2));
+}
+
+.main-menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  font: 24px/144px $font-stack;
+  font-weight: 700;
+}
+
+.feedback__title-amount {
+  font: 17px/24px $font-stack;
+  font-weight: 600;
+}
+
+.feedback__details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.feedback__name {
+  font-weight: 600;
+}
+
+
+.feedback__button {
+  color: #000000;
 }
