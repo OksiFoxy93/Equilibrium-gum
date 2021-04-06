@@ -95,7 +95,7 @@
   justify-content: flex-end;
   position: relative;
   overflow: hidden;
-  height: 220px;
+  height: 180px;
 }
 .info-block__wrapper-img_right::before {
   content: "";
