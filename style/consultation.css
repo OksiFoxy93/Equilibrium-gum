@@ -22,7 +22,7 @@
     width: 100%;
     background-color: #FFFFFF;
     border: none;
-    font: 20px/48px var(--main-font);
+    font: 20px/56px var(--main-font);
     text-align: center;
     font-weight: 600;
 }
@@ -34,7 +34,7 @@
 }
 
 .home-page__title {
-    margin: 0px 16px;
+    margin: 0 16px;
 }
 
 .wrapper-content {
@@ -57,6 +57,7 @@
 .service-full__img {
     position: relative;
     right: 25%;
+    object-fit: cover;
 }
 
 .service-full__price {
