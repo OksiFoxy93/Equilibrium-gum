@@ -14,7 +14,6 @@
 .title-block {
   font: 25px/32px "Montserrat", sans-serif;
   font-weight: 600;
-  color: rebeccapurple;
 }
 
 .wrapper-content {
@@ -233,7 +232,7 @@
   border: 1px solid #FFFFFF;
   border-radius: 0;
   color: #FFFFFF;
-  background-color: #000000;
+  background-color: inherit;
   font: 16px/48px "Montserrat", sans-serif;
   padding-left: 16px;
   margin-bottom: 24px;
@@ -285,6 +284,10 @@
 .subscribe-form {
   background-color: #2b2b2b;
   color: #FFFFFF;
+}
+
+.feedback-form__input {
+  background-color: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
