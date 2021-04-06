@@ -10,7 +10,7 @@
 
 }
 .feedback .owl-prev::before{
-    content: url("../images/arrow-left.png");
+    content: url("../images/index/arrow-left.png");
 }
 
 .feedback .owl-next {
@@ -21,7 +21,7 @@
 }
 
 .feedback .owl-next::before{
-    content: url("../images/arrow-right.png");
+    content: url("../images/index/arrow-right.png");
 }
 
 .feedback .owl-dots {
