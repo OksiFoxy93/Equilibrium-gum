@@ -110,7 +110,9 @@
 }
 
 .info-block__wrapper-img_left {
+  position: relative;
   overflow: hidden;
+  max-height: 180px;
 }
 .info-block__wrapper-img_left::before {
   content: "";
