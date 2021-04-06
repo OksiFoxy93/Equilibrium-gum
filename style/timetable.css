@@ -1,0 +1,68 @@
+.button-back {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    width: 90px;
+}
+
+.button-back__text {
+    text-decoration: underline;
+}
+
+.home-page__title {
+    text-transform: none;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.day-week__content {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.day-week__title {
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
+
+.day-week__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.day-week__item::before {
+    content: "";
+    height: 72px;
+    width: 6px;
+    background-color: #000000;
+}
+
+.day-week__time {
+    width: 70px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.day-week__details {
+    margin-left: 30px;
+}
+
+.day-week__prices {
+    font-weight: bold;
+    white-space: pre;
+}
+
+.button-link_home {
+    display: block;
+    text-transform: uppercase;
+    color: #000000;
+    width: 100%;
+    font: 20px/112px var(--main-font);
+    text-align: center;
+    font-weight: 600;
+}

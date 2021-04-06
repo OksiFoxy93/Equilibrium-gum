@@ -1,10 +1,255 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Расписание</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/timetable.css">
 </head>
 <body>
+<header class="header">
+    <div class="header__logo">
+        <a href="#" class="header__logo__link">
+            <img src="./images/logo.svg" alt="logo">
+        </a>
+    </div>
+    <nav class="nav">
+        <ul class="nav__list-desktop">
+            <li class="nav__item">
+                <a class="nav__link" href="#">Услуги и цены</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Расписание</a>
+            </li>
+        </ul>
+        <button class="nav__button"></button>
+    </nav>
+</header>
 
+<main>
+    <a href="index.html" class="button-back">
+        <img src="images/arrow-back.png" alt="">
+        <p class="button-back__text text-paragraph">Назад</p>
+    </a>
+    <h1 class="home-page__title">Расписание</h1>
+
+    <section class="day-week">
+        <div class="day-week__content ">
+            <h3 class="day-week__title title-block">Понедельник</h3>
+            <ul class="day-week__list">
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">8:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">18:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">19:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="day-week">
+        <div class="day-week__content">
+            <h3 class="day-week__title title-block">Вторник</h3>
+            <ul class="day-week__list">
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">18:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">19:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="day-week">
+        <div class="day-week__content">
+            <h3 class="day-week__title title-block">Среда</h3>
+            <ul class="day-week__list">
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">8:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">18:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">19:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="day-week">
+        <div class="day-week__content">
+            <h3 class="day-week__title title-block">Четверг</h3>
+            <ul class="day-week__list">
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">18:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">19:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="day-week">
+        <div class="day-week__content">
+            <h3 class="day-week__title title-block">Пятница</h3>
+            <ul class="day-week__list">
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">8:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">18:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">19:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="day-week">
+        <div class="day-week__content">
+            <h3 class="day-week__title title-block">Суббота</h3>
+            <ul class="day-week__list">
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">8:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">18:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+                <li class="day-week__item">
+                    <p class="day-week__time text-paragraph">19:30</p>
+                    <div class="day-week__details">
+                        <p class="day-week__text text-paragraph">Групповая тренировка</p>
+                        <p class="day-week__prices text-paragraph">1 ч.     150 грн.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <a class="button-link_home" href="index.html">На главную</a>
+</main>
+
+<footer>
+    <section class="contact">
+        <div class="contact__content wrapper-content">
+            <h3 class="contact__title title-block">Контакты</h3>
+            <p class="contact__text text-paragraph">м. Ботанический сад
+                пер. Отакара Яроша, 14
+                Харьков, Украина</p>
+            <p class="contact__text text-paragraph">dn.naughty.fair@gmail.com</p>
+            <p class="contact__text text-paragraph">+380638721322</p>
+            <div class="contact__social-network">
+                <a class="contact__social-link fab fa-twitter" href="#"></a>
+                <a class="contact__social-link fab fa-instagram" href="#"></a>
+                <a class="contact__social-link fab fa-facebook" href="#"></a>
+                <a class="contact__social-link fab fa-youtube" href="#"></a>
+            </div>
+        </div>
+
+        <div class="contact__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.318991871332!2d36.21654421571596!3d50.0241182794188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a137fa12531f%3A0x42bba6a50057a9cc!2z0KTQuNGC0L3QtdGBLdC60LvRg9CxICLQo9C90LjRhNC10YXRgiI!5e0!3m2!1sru!2sua!4v1617655587555!5m2!1sru!2sua" style="border:0;" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section class="feedback-form">
+        <div class="feedback-form__content wrapper-content">
+            <p class="feedback-form__text text-paragraph">Напиши нам свой вопрос, и мы тебе ответим</p>
+            <form action="#" method="post">
+                <input class="form__input" required type="text" placeholder="Имя *">
+                <input class="form__input" required type="email" placeholder="Эл. почта *">
+                <input class="form__input" type="tel" placeholder="Телефон">
+                <textarea class="feedback-form__textarea form__input" placeholder="Вопрос *" required></textarea>
+                <label class="feedback-form__label-checkbox">
+                    <input class="feedback-form__checkbox" type="checkbox">
+                    <span class="text-paragraph">Я хочу получать актуальную информацию на почтовый ящик</span>
+                </label>
+
+                <button class="form__submit" type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="subscribe-form">
+        <div class="feedback-form__content wrapper-content">
+            <p class="feedback-form__text text-paragraph">Подпишись на наши обновления, чтобы быть в курсе всех событий</p>
+            <form action="#" method="post">
+                <input class="feedback-form__input form__input" required type="email" placeholder="Эл. почта *">
+                <button class="form__submit" type="submit">Подписаться</button>
+            </form>
+        </div>
+    </section>
+</footer>
+
+<script src="https://kit.fontawesome.com/fc70117f52.js" crossorigin="anonymous"></script>
 </body>
 </html>
