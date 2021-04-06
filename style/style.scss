@@ -62,7 +62,7 @@ $font-stack: 'Montserrat', sans-serif;
 }
 
 .home-page__title {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   text-transform: uppercase;
   font: 36px/40px $font-stack;
   font-weight: 600;
@@ -89,7 +89,7 @@ $font-stack: 'Montserrat', sans-serif;
 }
 
 .info-block__text {
-  padding-top: 16px;
+  margin-top: 16px;
 }
 
 .info-block__wrapper-img_right {
@@ -167,7 +167,7 @@ $font-stack: 'Montserrat', sans-serif;
 }
 
 .feedback__title {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .feedback__title-amount {
@@ -178,7 +178,7 @@ $font-stack: 'Montserrat', sans-serif;
 .feedback__details {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
+  margin-top: 24px;
 }
 
 .feedback__name {
@@ -193,7 +193,8 @@ $font-stack: 'Montserrat', sans-serif;
   height: 220px;
 }
 
-.contact {
+.contact,
+.feedback-form{
   background-color: #000000;
   color: #ffffff;
 }
@@ -204,9 +205,86 @@ $font-stack: 'Montserrat', sans-serif;
 
 .contact__text {
   width: 60%;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.contact__social-network {
+  margin-left: 15px;
 }
 
 .contact__social-link {
   text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding-right: 30px;
+}
+
+.contact__map {
+  width: 100%;
+  height: 220px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%) contrast(100%);
+}
+
+.feedback-form__text {
+  margin-bottom: 32px;
+}
+
+.form__input {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background-color: #000000;
+  font: 16px/48px $font-stack;
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+
+.feedback-form__textarea {
+  height: 150px;
+}
+
+.feedback-form__checkbox {
+  opacity: 0;
+}
+
+.feedback-form__label-checkbox {
+  display: flex;
+  margin-bottom: 32px;
+  &::before {
+    content: "";
+    position: relative;
+    top: 4px;
+    color: #FFFFFF;
+    font: 20px/30px FontAwesome;
+    margin-right: 10px;
+    text-align: center;
+    min-width: 20px;
+    height: 20px;
+    background: #000000;
+    border: 1px solid #e3e3e3;
+  }
+}
+
+
+.feedback-form__label-checkbox:checked + .feedback-form__label-checkbox:before {
+  content: "\f00c";
+}
+
+.feedback-form__label-checkbox:disabled + .feedback-form__label-checkbox:before {
+  background: #eee;
+  color: #aaa;
+}
+
+.form__submit {
+  width: 100%;
+  background-color: #FFFFFF;
+  font: 20px/48px $font-stack;
+  text-align: center;
+  font-weight: 600;
+}
+
+.subscribe-form {
+  background-color: #2b2b2b;
+  color: #FFFFFF;
 }
