@@ -101,13 +101,13 @@ $font-stack: 'Montserrat', sans-serif;
   &::before {
     content: "";
     position: absolute;
-    left: 110px;
+    left: 106px;
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-bottom-width: 187px;
+    border-bottom-width: 236px;
     border-top-width: 0px;
-    border-left: 93px solid #000000;
+    border-left: 113px solid #000000;
   }
 }
 
