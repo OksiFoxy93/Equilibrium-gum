@@ -97,6 +97,7 @@ $font-stack: 'Montserrat', sans-serif;
   justify-content: flex-end;
   position: relative;
   overflow: hidden;
+  height: 220px;
   &::before {
     content: "";
     position: absolute;
@@ -233,6 +234,7 @@ $font-stack: 'Montserrat', sans-serif;
 .form__input {
   width: 100%;
   border: 1px solid #FFFFFF;
+  border-radius: 0;
   color: #FFFFFF;
   background-color: #000000;
   font: 16px/48px $font-stack;
