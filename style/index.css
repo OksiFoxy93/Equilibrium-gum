@@ -229,7 +229,7 @@ html {
 
 .form__input {
     width: 100%;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #aaaaaa;
     border-radius: 0;
     color: #FFFFFF;
     background-color: inherit;
@@ -238,39 +238,68 @@ html {
     margin-bottom: 24px;
 }
 
+.form__input:focus {
+    outline: none;
+}
+
 .feedback-form__textarea {
     height: 150px;
 }
 
-.feedback-form__checkbox {
-    opacity: 0;
-}
-
-.feedback-form__label-checkbox {
-    display: flex;
+.feedback-form__container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     margin-bottom: 32px;
 }
-.feedback-form__label-checkbox::before {
-    content: "";
-    position: relative;
+
+.feedback-form__checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.feedback-form__checkbox:hover {
+    background-color: #aaaaaa;
+}
+
+.feedback-form__checkmark {
+    position: absolute;
     top: 4px;
-    color: #FFFFFF;
-    font: 20px/30px FontAwesome;
-    margin-right: 10px;
-    text-align: center;
-    min-width: 20px;
-    height: 20px;
-    background: #000000;
-    border: 1px solid #e3e3e3;
+    left: 1px;
+    height: 21px;
+    width: 21px;
+    background-color: inherit;
+    border: 1px solid #FFFFFF;
 }
 
-.feedback-form__label-checkbox:checked + .feedback-form__label-checkbox:before {
-    content: "";
+.feedback-form__checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
 }
 
-.feedback-form__label-checkbox:disabled + .feedback-form__label-checkbox:before {
-    background: #eee;
-    color: #aaa;
+.feedback-form__checkbox:checked ~ .feedback-form__checkmark::after {
+    display: block;
+}
+
+.feedback-form__container-checkbox .feedback-form__checkmark::after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .form__submit {
