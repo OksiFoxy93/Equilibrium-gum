@@ -3,7 +3,7 @@
     color: #000000;
     display: flex;
     align-items: center;
-    margin: 16px;
+    margin-bottom: 16px;
     width: 90px;
 }
 
@@ -13,6 +13,7 @@
 
 .home-page__title {
     text-transform: none;
+    margin-bottom: 24px;
 }
 
 .button-link {
@@ -31,10 +32,6 @@
     text-transform: uppercase;
     text-decoration: underline;
     line-height: 112px;
-}
-
-.home-page__title {
-    margin: 0 16px;
 }
 
 .wrapper-content {

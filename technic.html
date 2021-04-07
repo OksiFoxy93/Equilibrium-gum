@@ -7,105 +7,122 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Техника и мобильность</title>
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/consultation.css">
+
+    <script defer src="https://kit.fontawesome.com/fc70117f52.js" crossorigin="anonymous"></script>
+    <script defer src="js/scripts.js"></script>
 </head>
 <body>
-<header class="header">
-    <div class="header__logo">
-        <a href="#" class="header__logo__link">
-            <img src="./images/logo.svg" alt="logo">
-        </a>
-    </div>
-    <nav class="nav">
-        <ul class="nav__list-desktop">
-            <li class="nav__item">
-                <a class="nav__link" href="#">Услуги и цены</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link" href="#">Расписание</a>
-            </li>
-        </ul>
-        <button class="nav__button"></button>
-    </nav>
-</header>
-
-<main>
-    <a href="index.html" class="button-back">
-        <img src="images/arrow-back.png" alt="">
-        <p class="button-back__text text-paragraph">Назад</p>
-    </a>
-
-    <section class="service-full">
-        <h1 class="home-page__title">Техника и мобильность</h1>
-        <p class="service-full__text_bold wrapper-content text-paragraph">Обучение желаемому движению (навыку) направления CrossFit</p>
-        <div class="service-full__img-wrapper">
-            <img class="service-full__img" src="images/service%202.jpg" alt="Здоровая пища">
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo__link">
+                <img src="./images/logo.svg" alt="logo">
+            </a>
         </div>
-        <div class="service-full__content">
-            <div class="service-full__price">
-                <p class="service-full__details">1 ч. 30 мин.</p>
-                <p class="service-full__details">250 грн.</p>
+        <nav class="nav">
+            <div id="menu">
+                <button class="c-hamburger c-hamburger-line">
+                    <span></span>
+                </button>
             </div>
-            <p class="service-full__text text-paragraph">Специально подготовленная программа состоящая из нескольких (от 5 до 20) посещений, с целью изучения нового упражнения из направления CrossFit. Безопасное и эффективное обучение новому движению, а также доведение клиента в этом упражнении до уровня "готов выполнять его на тренировках дня". Продолжительность тренировки от 60 до 90 минут. Цена указана за одно занятие.</p>
-            <p class="service-full__details">Где</p>
-            <p class="service-full__text text-paragraph">У нас в клубе или в любом другом подходящем месте.</p>
+            <ul class="nav-list">
+                <li class="nav__item">
+                    <a class="nav__link" href="prices.html">Услуги и Цены</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="timetable.html">Расписание</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Музыка</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Блог</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#contact">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="home-page__content">
+            <a href="index.html" class="button-back">
+                <img src="images/arrow-back.png" alt="">
+                <p class="button-back__text text-paragraph">Назад</p>
+            </a>
+            <h1 class="home-page__title">Техника и мобильность</h1>
+            <p class="service-full__text_bold text-paragraph">Обучение желаемому движению (навыку) направления CrossFit</p>
         </div>
-    </section>
 
-    <a class="button-link_home button-link" href="index.html">На главную</a>
-</main>
-
-<footer>
-    <section class="contact">
-        <div class="contact__content wrapper-content">
-            <h3 class="contact__title title-block">Контакты</h3>
-            <p class="contact__text text-paragraph">м. Ботанический сад
-                пер. Отакара Яроша, 14
-                Харьков, Украина</p>
-            <p class="contact__text text-paragraph">dn.naughty.fair@gmail.com</p>
-            <p class="contact__text text-paragraph">+380638721322</p>
-            <div class="contact__social-network">
-                <a class="contact__social-link fab fa-twitter" href="#"></a>
-                <a class="contact__social-link fab fa-instagram" href="#"></a>
-                <a class="contact__social-link fab fa-facebook" href="#"></a>
-                <a class="contact__social-link fab fa-youtube" href="#"></a>
+        <section class="service-full">
+            <div class="service-full__img-wrapper">
+                <img class="service-full__img" src="images/service3.jpg" alt="Здоровая пища">
             </div>
-        </div>
+            <div class="service-full__content">
+                <div class="service-full__price">
+                    <p class="service-full__details">1 ч. 30 мин.</p>
+                    <p class="service-full__details">250 грн.</p>
+                </div>
+                <p class="service-full__text text-paragraph">Специально подготовленная программа состоящая из нескольких (от 5 до 20) посещений, с целью изучения нового упражнения из направления CrossFit. Безопасное и эффективное обучение новому движению, а также доведение клиента в этом упражнении до уровня "готов выполнять его на тренировках дня". Продолжительность тренировки от 60 до 90 минут. Цена указана за одно занятие.</p>
+                <p class="service-full__details">Где</p>
+                <p class="service-full__text text-paragraph">У нас в клубе или в любом другом подходящем месте.</p>
+            </div>
+        </section>
 
-        <div class="contact__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.318991871332!2d36.21654421571596!3d50.0241182794188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a137fa12531f%3A0x42bba6a50057a9cc!2z0KTQuNGC0L3QtdGBLdC60LvRg9CxICLQo9C90LjRhNC10YXRgiI!5e0!3m2!1sru!2sua!4v1617655587555!5m2!1sru!2sua" style="border:0;" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
+        <a class="button-link_home button-link" href="index.html">На главную</a>
+    </main>
 
-    <section class="feedback-form">
-        <div class="feedback-form__content wrapper-content">
-            <p class="feedback-form__text text-paragraph">Напиши нам свой вопрос, и мы тебе ответим</p>
-            <form action="#" method="post">
-                <input class="form__input" required type="text" placeholder="Имя *">
-                <input class="form__input" required type="email" placeholder="Эл. почта *">
-                <input class="form__input" type="tel" placeholder="Телефон">
-                <textarea class="feedback-form__textarea form__input" placeholder="Вопрос *" required></textarea>
-                <label class="feedback-form__label-checkbox">
-                    <input class="feedback-form__checkbox" type="checkbox">
-                    <span class="text-paragraph">Я хочу получать актуальную информацию на почтовый ящик</span>
-                </label>
+    <footer>
+        <section class="contact" id="contact">
+            <div class="contact__content wrapper-content">
+                <h3 class="contact__title title-block">Контакты</h3>
+                <p class="contact__text text-paragraph">м. Ботанический сад
+                    пер. Отакара Яроша, 14
+                    Харьков, Украина</p>
+                <p class="contact__text text-paragraph">dn.naughty.fair@gmail.com</p>
+                <p class="contact__text text-paragraph">+380638721322</p>
+                <div class="contact__social-network">
+                    <a class="contact__social-link fab fa-twitter" href="#"></a>
+                    <a class="contact__social-link fab fa-instagram" href="#"></a>
+                    <a class="contact__social-link fab fa-facebook" href="#"></a>
+                    <a class="contact__social-link fab fa-youtube" href="#"></a>
+                </div>
+            </div>
 
-                <button class="form__submit" type="submit">Отправить</button>
-            </form>
-        </div>
-    </section>
+            <div class="contact__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.318991871332!2d36.21654421571596!3d50.0241182794188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a137fa12531f%3A0x42bba6a50057a9cc!2z0KTQuNGC0L3QtdGBLdC60LvRg9CxICLQo9C90LjRhNC10YXRgiI!5e0!3m2!1sru!2sua!4v1617655587555!5m2!1sru!2sua" style="border:0;" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
 
-    <section class="subscribe-form">
-        <div class="feedback-form__content wrapper-content">
-            <p class="feedback-form__text text-paragraph">Подпишись на наши обновления, чтобы быть в курсе всех событий</p>
-            <form action="#" method="post">
-                <input class="feedback-form__input form__input" required type="email" placeholder="Эл. почта *">
-                <button class="form__submit" type="submit">Подписаться</button>
-            </form>
-        </div>
-    </section>
-</footer>
+        <section class="feedback-form">
+            <div class="feedback-form__content wrapper-content">
+                <p class="feedback-form__text text-paragraph">Напиши нам свой вопрос, и мы тебе ответим</p>
+                <form action="#" method="post">
+                    <input class="form__input" required type="text" placeholder="Имя *">
+                    <input class="form__input" required type="email" placeholder="Эл. почта *">
+                    <input class="form__input" type="tel" placeholder="Телефон">
+                    <textarea class="feedback-form__textarea form__input" placeholder="Вопрос *" required></textarea>
+                    <label class="feedback-form__label-checkbox">
+                        <input class="feedback-form__checkbox" type="checkbox">
+                        <span class="text-paragraph">Я хочу получать актуальную информацию на почтовый ящик</span>
+                    </label>
 
-<script src="https://kit.fontawesome.com/fc70117f52.js" crossorigin="anonymous"></script>
+                    <button class="form__submit" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="subscribe-form">
+            <div class="feedback-form__content wrapper-content">
+                <p class="feedback-form__text text-paragraph">Подпишись на наши обновления, чтобы быть в курсе всех событий</p>
+                <form action="#" method="post">
+                    <input class="feedback-form__input form__input" required type="email" placeholder="Эл. почта *">
+                    <button class="form__submit" type="submit">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

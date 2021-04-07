@@ -1,23 +1,13 @@
-$(document).ready(function () {
-    let owlCarousel = $('.owl-carousel');
-    if (owlCarousel.length === 0) {
-        return;
+document.querySelector('.c-hamburger').addEventListener('click', function (event) {
+    event.preventDefault();
+    if (this.classList.contains('is-active')) {
+        this.classList.remove('is-active');
+        document.querySelector('.nav-list').classList.remove('nav-active');
     }
-    owlCarousel.owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: true,
-        navText: ['', ' '],
+    else {
+        this.classList.add('is-active');
+        document.querySelector('.nav-list').classList.add('nav-active');
+    }
+})
 
-        responsive: {
-            0: {
-                items: 1
-            },
 
-            1000: {
-                items: 1
-            }
-        }
-    });
-
-});

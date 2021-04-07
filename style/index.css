@@ -10,6 +10,10 @@
     --main-font: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .text-paragraph {
     font: 16px/24px var(--main-font);
     font-weight: 300;
@@ -25,13 +29,18 @@
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
     padding: 16px;
+    width: 100%;
 }
 
+/*
 .nav__button {
     position: relative;
     width: 48px;
@@ -39,7 +48,24 @@
     background-color: #000000;
     border: none;
 }
-.nav__button::after {
+
+.line {
+    content: "";
+    width: 21px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    top: 16px;
+    left: 14px;
+    box-shadow: 0 7px 0 0 #fff, 0 14px 0 0 #fff;
+}
+*/
+
+
+
+
+
+/*.nav__button::after {
     content: "";
     width: 21px;
     height: 2px;
@@ -48,11 +74,11 @@
     top: 16px;
     left: 14px;
     box-shadow: 0 7px 0 0 #fff, 0 14px 0 0 #fff;
-}
+}*/
 
-.nav__list-desktop {
+/*.nav__list-desktop {
     display: none;
-}
+}*/
 
 .home-page {
     background-color: #000000;
@@ -60,7 +86,7 @@
 }
 
 .home-page__content {
-    padding: 30px 15px 24px;
+    padding: 106px 15px 24px;
 }
 
 .home-page__title {
@@ -163,6 +189,7 @@
 }
 
 .main-menu__link {
+    display: block;
     text-decoration: none;
     color: #ffffff;
     font: 24px/144px var(--main-font);

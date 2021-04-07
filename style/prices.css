@@ -3,7 +3,7 @@
     color: #000000;
     display: flex;
     align-items: center;
-    margin: 16px;
+    margin-bottom: 16px;
     width: 90px;
 }
 
@@ -11,11 +11,14 @@
     text-decoration: underline;
 }
 
+.home-page__content {
+    padding-bottom: 0;
+}
+
 .home-page__title {
     text-transform: none;
-    margin-left: 16px;
-    margin-top: 16px;
     width: 60%;
+    margin-bottom: 0;
 }
 
 .service-block__title {
