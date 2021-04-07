@@ -1,3 +1,4 @@
+/* nav-menu */
 document.querySelector('.c-hamburger').addEventListener('click', function (event) {
     event.preventDefault();
     if (this.classList.contains('is-active')) {
@@ -16,3 +17,5 @@ document.querySelector('.nav-list').addEventListener('click', () => {
     document.querySelector('.c-hamburger').classList.remove('is-active');
     $(document.querySelector('.nav-active')).fadeOut()
 })
+
+////////////////
