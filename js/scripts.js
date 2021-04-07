@@ -19,3 +19,10 @@ document.querySelector('.nav-list').addEventListener('click', () => {
 })
 
 ////////////////
+if(document.getElementById('button-back')){
+    document.getElementById('button-back').addEventListener('click', goBack);
+}
+
+function goBack() {
+    window.history.back();
+}

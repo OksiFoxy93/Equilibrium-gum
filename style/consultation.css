@@ -1,10 +1,15 @@
 .button-back {
-    text-decoration: none;
     color: #000000;
     display: flex;
     align-items: center;
     margin-bottom: 16px;
     width: 90px;
+    background-color: inherit;
+    border: none;
+}
+
+.button-back:focus {
+    outline: none;
 }
 
 .button-back__text {
