@@ -52,7 +52,7 @@ readMoreBtn.addEventListener('click', seeMore)*/
 
 $(function(){
     $(".feedback__text").elimore({
-        maxLength: 160,
+        maxLength: 230,
         moreText: "Читать далее",
         lessText: "Свернуть текст"
     });
