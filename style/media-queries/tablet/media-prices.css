@@ -3,6 +3,16 @@
         margin-bottom: 0;
     }
 
-
+    .service-block__img-wrapper {
+        position: relative;
+        right: 25%;
+    }
+    .service-block__img-wrapper,
+    .service-block__title,
+    .service-block__content,
+    .service-block__text,
+    .service-block__img{
+        display: inline;
+    }
 
 }

@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+    .button-back {
+        margin-bottom: 24px;
+    }
+
+    .home-page__content {
+        padding-bottom: 0;
+    }
+
+    .home-page__title {
+        font: 40px/48px var(--main-font);
+        margin-bottom: 0;
+        font-weight: 700;
+    }
+
+    .day-week__content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .day-week__details {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .day-week__time {
+        font-weight: 700;
+        text-align: left;
+        margin-left: 24px;
+        font-size: 20px;
+    }
+
+    .day-week__item::before {
+        width: 8px;
+    }
+
+    .day-week__prices {
+        font-size: 17px;
+    }
+}

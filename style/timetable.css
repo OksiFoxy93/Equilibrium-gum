@@ -61,8 +61,12 @@
 }
 
 .day-week__prices {
-    font-weight: bold;
+    font-weight: 700;
     white-space: pre;
+}
+
+.day-week__prices_hrn {
+    margin-left: 27px;
 }
 
 .button-link_home {
