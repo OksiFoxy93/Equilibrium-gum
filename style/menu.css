@@ -1,5 +1,6 @@
 .c-hamburger {
     display: block;
+    z-index: 4;
     position: relative;
     right: 0;
     top: 0;

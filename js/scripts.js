@@ -1,6 +1,6 @@
 /* nav-menu */
 document.querySelector('.c-hamburger').addEventListener('click', function (event) {
-    event.preventDefault();
+   /* event.preventDefault();*/
     if (this.classList.contains('is-active')) {
         this.classList.remove('is-active');
         document.querySelector('.nav-list').classList.remove('nav-active');
