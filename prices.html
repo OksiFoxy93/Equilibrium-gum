@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/prices.css">
+    <link rel="stylesheet" href="style/media-queries/tablet/media-index.css">
+    <link rel="stylesheet" href="style/media-queries/tablet/media-prices.css">
 
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script defer src="https://kit.fontawesome.com/fc70117f52.js" crossorigin="anonymous"></script>
@@ -27,23 +29,25 @@
                     <span></span>
                 </button>
             </div>
-            <ul class="nav-list">
-                <li class="nav__item">
-                    <a class="nav__link" href="prices.html">Услуги и Цены</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="timetable.html">Расписание</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Музыка</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Блог</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#contact">Контакты</a>
-                </li>
-            </ul>
+            <div class="nav-list">
+                <ul class="nav-list-wrapper">
+                    <li class="nav__item">
+                        <a class="nav__link" href="prices.html">Услуги и Цены</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="timetable.html">Расписание</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Музыка</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Блог</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -57,12 +61,12 @@
         </div>
 
         <section class="service-block">
-            <h3 class="service-block__title title-block">Консультации по<br> питанию</h3>
             <div class="service-block__img-wrapper service-block__img_left">
                 <img class="service-block__img" src="images/service1.jpg" alt="Здоровая пища">
             </div>
 
             <div class="service-block__content wrapper-content">
+                <h3 class="service-block__title title-block">Консультации по<br> питанию</h3>
                 <p class="service-block__text text-paragraph">Начните питаться как следует и 60% результата вам уже обеспечено!</p>
                 <p class="service-block__text_bold text-paragraph">1 ч. 30 мин.<br>350 грн.</p>
                 <a class="service-block__button_black button-link" href="consultation.html">Подробней</a>

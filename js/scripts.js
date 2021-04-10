@@ -4,10 +4,12 @@ document.querySelector('.c-hamburger').addEventListener('click', function (event
     if (this.classList.contains('is-active')) {
         this.classList.remove('is-active');
         document.querySelector('.nav-list').classList.remove('nav-active');
-        $(document.querySelector('.nav-active')).fadeOut()
+        $(document.querySelector('.nav-active')).fadeOut();
+        document.body.classList.remove('stop-scrolling');
     }
     else {
         this.classList.add('is-active');
+        document.body.classList.add('stop-scrolling');
         document.querySelector('.nav-list').classList.add('nav-active');
         $(document.querySelector('.nav-active')).fadeIn()
     }

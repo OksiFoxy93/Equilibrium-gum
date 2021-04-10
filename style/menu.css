@@ -103,3 +103,7 @@
     font: 30px/100px var(--main-font);
 }
 
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
