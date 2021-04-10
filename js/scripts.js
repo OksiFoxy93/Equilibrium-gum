@@ -8,6 +8,7 @@ document.querySelector('.c-hamburger').addEventListener('click', function (event
         document.body.classList.remove('stop-scrolling');
     }
     else {
+
         this.classList.add('is-active');
         document.body.classList.add('stop-scrolling');
         document.querySelector('.nav-list').classList.add('nav-active');
