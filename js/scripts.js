@@ -19,6 +19,7 @@ document.querySelector('.c-hamburger').addEventListener('click', function (event
 document.querySelector('.nav-list').addEventListener('click', () => {
     document.querySelector('.c-hamburger').classList.remove('is-active');
     $(document.querySelector('.nav-active')).fadeOut()
+    document.body.classList.remove('stop-scrolling');
 })
 
 ////////////////
