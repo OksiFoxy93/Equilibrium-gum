@@ -277,10 +277,6 @@ html {
     width: 0;
 }
 
-.feedback-form__checkbox:hover {
-    background-color: #aaaaaa;
-}
-
 .feedback-form__checkmark {
     position: absolute;
     top: 4px;
